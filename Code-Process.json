@@ -1,0 +1,5 @@
+{
+	"name": "CodeShare",
+	"script": "src/server.js",
+	"watch": true
+}

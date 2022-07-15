@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js" integrity="sha512-gU7kztaQEl7SHJyraPfZLQCNnrKdaQi5ndOyt4L4UPL/FHDd/uB9Je6KDARIqwnNNE27hnqoWLBq+Kpe4iHfeQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/base16/solarized-dark.min.css" integrity="sha512-kBHeOXtsKtA97/1O3ebZzWRIwiWEOmdrylPrOo3D2+pGhq1m+1CroSOVErIlsqn1xmYowKfQNVDhsczIzeLpmg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/5.0.1/autosize.min.js" integrity="sha512-aBxhlAogg9r6Gtes+dsuqW6IQ4Ee0MtjexckbMNOVdxAfi5NSEd38BNEgFiaBWS6cl67r+8OImzxVKDdmswhnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="../css/stylesheet.css" />
+    <script defer>hljs.highlightAll();</script>
+	<title>New File</title>
+</head>
+<body>
+	<form action="/save" method="post">
+        <%- include('_buttons.ejs', { canSave: true }) %> 
+        <div class="wrapper">
+            <div class="line-numbers">
+                &gt;
+            </div>
+            <textarea autofocus name="code"><%= locals.code %></textarea>
+        </div>
+    </form>>
+    <script>
+        autosize(document.querySelector('textarea'));
+    </script>
+</body>
+</html>
