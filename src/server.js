@@ -24,7 +24,7 @@ app.use('/css/', cssDirectory);
 // app.use('/scripts/', scriptDirectory);
 
 //Use URL Encoding
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ limit: '100mb', extended: true }));
 
 // Get Views
 const views = {
